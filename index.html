@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter Signup</title>
+    <link rel="stylesheet" href="styles/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body
+    class="bg-dark-slate-grey sm:flex sm:items-center sm:justify-center sm:h-screen"
+  >
+    <div
+      class="container flex flex-col gap-5 bg-white sm:flex-row-reverse sm:p-5 sm:rounded-2xl sm:w-[700px] sm:h-[500px]"
+    >
+      <img
+        src="/images/illustration-sign-up-mobile.svg"
+        alt=""
+        class="sm:hidden"
+      />
+      <img
+        src="./images//illustration-sign-up-desktop.svg"
+        alt=""
+        class="hidden sm:block"
+      />
+      <div class="flex flex-col gap-5 sm:my-auto px-5">
+        <h1 class="text-4xl font-medium text-dark-slate-grey">Stay updated!</h1>
+        <p class="text-dark-slate-grey sm:text-sm">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="flex flex-col gap-3 mb-5">
+          <li class="flex gap-2 items-start">
+            <img src="./images/icon-list.svg" alt="" /><span
+              class="text-dark-slate-grey sm:text-sm"
+              >Product discovery and building what matters</span
+            >
+          </li>
+          <li class="flex gap-2 items-start">
+            <img src="./images//icon-list.svg" alt="" /><span
+              class="text-dark-slate-grey sm:text-sm"
+              >Measuring to ensure updates are a success</span
+            >
+          </li>
+          <li class="flex gap-2 items-start">
+            <img src="./images//icon-list.svg" alt="" /><span
+              class="text-dark-slate-grey sm:text-sm"
+              >And much more!</span
+            >
+          </li>
+        </ul>
+        <form action="" class="flex flex-col gap-5 mb-5">
+          <div class="email flex flex-col">
+            <label
+              for=""
+              class="text-xs mb-2 font-semibold text-dark-slate-grey w-full flex justify-between"
+              ><span>Email address</span>
+              <span class="email-required hidden text-red-600"
+                >Valid email required</span
+              ></label
+            >
+            <input
+              type="text"
+              class="w-full py-3 border-solid border border-grey rounded-md px-3 sm:text-sm"
+              placeholder="email@company.com"
+              name="email"
+            />
+          </div>
+
+          <input
+            type="submit"
+            class="w-full py-3 bg-dark-slate-grey text-white rounded-md font-medium border border-solid border-dark-slate-grey hover:bg-tomato hover:border-tomato cursor-pointer sm:text-sm"
+            value="Subscribe to monthly newsletter"
+          />
+        </form>
+      </div>
+    </div>
+    <div
+      class="container-success bg-white p-5 h-screen flex flex-col items-start justify-between hidden sm:w-[400px] sm:h-[400px] sm:rounded-lg"
+    >
+      <div class="success flex flex-col gap-5 flex-1 justify-center">
+        <img src="./images/icon-success.svg" alt="" class="h-16 w-16" />
+        <h1 class="text-4xl text-dark-slate-grey font-medium">
+          Thanks for subscribing!
+        </h1>
+        <p class="text-dark-slate-grey">
+          A confirmation email has been sent to
+          <span class="font-semibold"></span> Please open it and click the
+          button inside to confirm your subscription
+        </p>
+      </div>
+      <div
+        class="button w-full bg-dark-slate-grey text-white py-3 text-center rounded-md font-medium hover:bg-tomato"
+      >
+        Dismiss message
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
