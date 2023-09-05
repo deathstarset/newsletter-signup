@@ -7,8 +7,6 @@ const emailForm = document.forms[0];
 const emailInput = document.querySelector("[name=email]");
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 const emailRequired = document.querySelector(".email-required");
-console.log(emailInput);
-
 emailForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const emailValue = emailInput.value;
